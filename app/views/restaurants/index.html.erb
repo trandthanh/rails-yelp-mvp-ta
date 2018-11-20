@@ -1,0 +1,7 @@
+<% @restaurants.each do |r| %>
+  <div class="restaurant-item">
+    <%= link_to restaurant_path(r) do %>
+      <%= r.name %>, <%= r.address %>, <%= r.phone_number %>, <%= r.category %>
+    <% end %>
+  </div>
+<% end %>
